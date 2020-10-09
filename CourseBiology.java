@@ -3,7 +3,7 @@ import java.util.Iterator;
 public class CourseBiology implements CourseID {
     static final int MAX_COURSES = 5;
     int numberOfCourses = 0;
-    Course[] course;
+    Course[] courses;
 
     public CourseBiology() {
         courses = new Course[MAX_COURSES];
@@ -23,7 +23,7 @@ public class CourseBiology implements CourseID {
         if (numberOfCourses >= MAX_COURSES) {
             System.err.println("Sorry, the maximum number of courses have been added.");
         } else {
-            courses[numberOfCourses] = courses;
+            courses[numberOfCourses] = course;
             numberOfCourses = numberOfCourses + 1;
         }
     }

@@ -1,3 +1,5 @@
+import java.util.Iterator;
+
 public class Course {
     
 	String name;
@@ -26,7 +28,7 @@ public class Course {
 		return completed;
 	}
 
-	public boolean isUnfinished() {
+	public boolean isIncomplete() {
 		return !completed;
 	}
 
@@ -41,4 +43,5 @@ public class Course {
 		}
 		return ("\n\n  [" + check + "] " + name + "\n      " + description);
 	}
+	
 }

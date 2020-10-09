@@ -1,13 +1,13 @@
 import java.util.Iterator;
 
 public class PrintAllCourses {
-    static Course biology = new CourseBiology();
+    static CourseID biology = new CourseBiology();
 
     public static void main(String args[]) {
         printCourseRequirements(biology);
     }
 
-    public static void printCourseRequirements(Course course) {
+    public static void printCourseRequirements(CourseID course) {
         Iterator courseIterator = course.createIterator();
         printCourseRequirements(courseIterator);
     }
@@ -15,7 +15,7 @@ public class PrintAllCourses {
     private static void printCourseRequirements(Iterator iterator) {
         System.out.println("\nCOURSES\n--------\nBIOLOGY");
         while (iterator.hasNext()) {
-            Course course = (Course) iterator.hasNext();
+            Course course = (Course) iterator.next();
             System.out.print(course.toString());
         }
     }

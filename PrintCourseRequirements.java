@@ -1,7 +1,7 @@
 import java.util.Iterator;
 
 public class PrintCourseRequirements {
-    static Course biology = new CourseBiology();
+    static CourseID biology = new CourseBiology();
 
     public static void main(String args[]) {
         printCourseRequirements(biology);
@@ -12,7 +12,7 @@ public class PrintCourseRequirements {
         printIncompleteRequirements(courseIterator);
     }
 
-    private static void printIncompleteRequirements(Iterator iterator) {
+    private static void printIncompleteRequirements(CourseID biology2) {
         System.out.println("\nINCOMPLETE REQUIREMENTS\n---------------\n\n");
         while (iterator.hasNext()) {
             Course course = (Course) iterator.next();
