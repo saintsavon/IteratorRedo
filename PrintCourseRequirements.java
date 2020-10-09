@@ -13,7 +13,7 @@ public class PrintCourseRequirements {
     }
 
     private static void printIncompleteRequirements(Iterator iterator) {
-        System.out.println("\nINCOMPLETE REQUIREMENTS\n-----------------------\nBIOLOGY\n");
+        System.out.println("\nINCOMPLETE REQUIREMENTS:");
         while (iterator.hasNext()) {
             Course course = (Course) iterator.next();
             if (course.isIncomplete()) {
