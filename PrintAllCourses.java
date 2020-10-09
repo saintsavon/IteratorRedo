@@ -13,7 +13,7 @@ public class PrintAllCourses {
     }
 
     private static void printCourseRequirements(Iterator iterator) {
-        System.out.println("\nCOURSES\n--------\nBIOLOGY");
+        System.out.println("\nCOURSES\n-------\nBIOLOGY");
         while (iterator.hasNext()) {
             Course course = (Course) iterator.next();
             System.out.print(course.toString());
