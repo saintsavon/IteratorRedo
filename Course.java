@@ -43,5 +43,5 @@ public class Course {
 		}
 		return ("\n\n  [" + check + "] " + name + "\n      " + description);
 	}
-	
+
 }

@@ -7,12 +7,12 @@ public class PrintCourseRequirements {
         printCourseRequirements(biology);
     }
 
-    public static void printCourseRequirements(Course course) {
+    public static void printCourseRequirements(CourseID course) {
         Iterator courseIterator = course.createIterator();
         printIncompleteRequirements(courseIterator);
     }
 
-    private static void printIncompleteRequirements(CourseID biology2) {
+    private static void printIncompleteRequirements(Iterator iterator) {
         System.out.println("\nINCOMPLETE REQUIREMENTS\n---------------\n\n");
         while (iterator.hasNext()) {
             Course course = (Course) iterator.next();
